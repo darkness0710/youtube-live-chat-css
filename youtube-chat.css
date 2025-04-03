@@ -20,6 +20,21 @@ body {
     font-family: 'Roboto', 'Noto Sans', 'Mitr', sans-serif;
 }
 
+yt-live-chat-text-message-renderer #content,
+yt-live-chat-legacy-paid-message-renderer #content {
+  overflow: initial !important;
+}
+
+/* Hide scrollbar. */
+yt-live-chat-item-list-renderer #items{
+  overflow: hidden !important;
+}
+
+yt-live-chat-item-list-renderer #item-scroller{
+  overflow: hidden !important;
+}
+
+
 yt-live-chat-renderer {
     background-color: transparent !important;
 }
