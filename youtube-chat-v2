@@ -4,12 +4,12 @@
 :root {
     --nameTextColor: #ffebe9;
     --nameBackgroundColor: #a32834;
-    --nameFontSize: 17px;
+    --nameFontSize: 18px;
     --nameBoxPadding: 2px;
 
     --chatTextColor: #ffffff; /* Đổi thành trắng */
     --chatBackgroundColor: transparent;
-    --chatFontSize: 17px;
+    --chatFontSize: 18px;
     --chatBoxPadding: 8px;
     --chatBoxPaddingSide: 12px;
 }
