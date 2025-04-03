@@ -54,7 +54,7 @@ yt-live-chat-text-message-renderer #author-name {
     color: var(--nameTextColor) !important;
     padding: 4px 8px !important;
     border-radius: 20px !important;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Giảm nhẹ shadow */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     display: inline-block !important;
     font-family: 'Roboto', 'Noto Sans', 'Mitr', sans-serif !important;
     margin-bottom: 0 !important;
@@ -65,7 +65,7 @@ yt-live-chat-text-message-renderer #author-name {
 }
 
 yt-live-chat-text-message-renderer #message {
-    border: 1px solid #a32834 !important;  /* Đổi từ dashed sang solid */
+    border: 1px solid #a32834 !important;
     border-radius: 12px !important;
     background: rgba(255, 255, 255, 0.9) !important;
     color: black !important;
@@ -90,7 +90,7 @@ yt-live-chat-banner-manager {
 body {
     overflow: hidden;
     background-color: rgba(0,0,0,0);
-    font-family: 'Roboto', 'Noto Sans', 'Mitr', sans-serif; /* Ưu tiên Roboto, Noto Sans */
+    font-family: 'Roboto', 'Noto Sans', 'Mitr', sans-serif;
 }
 
 yt-live-chat-renderer {
@@ -99,7 +99,7 @@ yt-live-chat-renderer {
 
 yt-live-chat-text-message-renderer {
     display: flex !important;
-    align-items: flex-start !important; /* Align items to the top */
+    align-items: flex-start !important;
     flex-direction: row !important;
     padding: 4px !important;
 }
