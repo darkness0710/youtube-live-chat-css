@@ -1,0 +1,146 @@
+/* Custom Youtube Live Chat by Nguyen Thanh Hai */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --nameTextColorMember: #ffebe9;
+    --nameBackgroundColorMember: #a32834;
+    --nameTextColor: #ffebe9;
+    --nameBackgroundColor: #9b5f0a;
+    --nameTextColorMod: #ffebe9;
+    --nameBackgroundColorMod: #1e90ff;
+    --nameFontSize: 18px;
+    --nameBoxPadding: 2px;
+    --chatTextColor: #ffffff;
+    --chatBackgroundColor: transparent;
+    --chatFontSize: 18px;
+    --chatBoxPadding: 8px;
+    --chatBoxPaddingSide: 12px;
+}
+
+body {
+    overflow: hidden;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Montserrat', 'Roboto', 'Noto Sans', sans-serif;
+    border: none !important;
+}
+
+yt-live-chat-text-message-renderer #content,
+yt-live-chat-legacy-paid-message-renderer #content {
+    overflow: initial !important;
+}
+
+yt-live-chat-item-list-renderer #items {
+    overflow: hidden !important;
+}
+
+yt-live-chat-item-list-renderer #item-scroller {
+    overflow: hidden !important;
+}
+
+yt-live-chat-renderer {
+    background-color: transparent !important;
+}
+
+yt-live-chat-text-message-renderer {
+    display: flex !important;
+    align-items: flex-start !important;
+    flex-direction: row !important;
+    padding: 4px !important;
+}
+
+yt-live-chat-text-message-renderer #author-photo {
+    margin-right: 4px !important;
+    width: 23px !important;
+    height: 23px !important;
+    border-radius: 50% !important;
+    flex-shrink: 0;
+    margin-top: 2px !important;
+}
+
+yt-live-chat-text-message-renderer #content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+yt-live-chat-text-message-renderer #author-name {
+    font-size: var(--nameFontSize) !important;
+    background-color: var(--nameBackgroundColor) !important;
+    color: var(--nameTextColor) !important;
+    padding: 4px 8px !important;
+    border-radius: 20px !important;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
+    display: inline-block !important;
+    font-family: 'Montserrat', 'Roboto', 'Noto Sans', sans-serif !important;
+    margin-bottom: 0 !important;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 700 !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+yt-live-chat-text-message-renderer #message {
+    font-family: 'Montserrat', 'Roboto', 'Noto Sans', sans-serif;
+    border-radius: 10px;
+    font-size: var(--chatFontSize) !important;
+    line-height: 1.6 !important;
+    color: #ffffff !important;
+    padding: 6px 10px !important;
+    background-color: transparent !important;
+    text-align: left;
+    box-shadow: none !important;
+    margin-top: -11px !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    border: none !important; /* Bỏ viền */
+    font-weight: 700 !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+yt-live-chat-header-renderer,
+yt-live-chat-message-input-renderer,
+yt-live-chat-text-message-renderer #author-badges,
+yt-live-chat-text-message-renderer #timestamp,
+yt-live-chat-ticker-renderer,
+yt-live-chat-mode-change-message-renderer,
+yt-live-chat-viewer-engagement-message-renderer,
+yt-live-chat-restricted-participation-renderer,
+yt-live-chat-action-panel-renderer,
+yt-live-chat-renderer #action-panel,
+yt-live-chat-banner-manager {
+    display: none !important;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* yt-live-chat-text-message-renderer {
+    opacity: 1;
+    animation: fadeOut 1s forwards;
+    animation-delay: 10s;
+} */
+
+yt-live-chat-text-message-renderer #author-name[type="moderator"],
+yt-live-chat-text-message-renderer #author-name.moderator,
+yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="moderator"] {
+    background-color: var(--nameBackgroundColorMod) !important;
+    color: var(--nameTextColorMod) !important;
+}
+
+yt-live-chat-text-message-renderer #author-name[type="member"],
+yt-live-chat-text-message-renderer #author-name.member,
+yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="member"] {
+    background-color: var(--nameBackgroundColorMember) !important;
+    color: var(--nameTextColorMember) !important;
+}
