@@ -4,11 +4,11 @@
 :root {
     --nameTextColorOwner: #b42ac1;
     --nameBackgroundColorOwner: #ffffff;
-    --nameTextColorMember: #ffebe9;
+    --nameTextColorMember: #ffffff;
     --nameBackgroundColorMember: #a32834;
-    --nameTextColor: #ffebe9;
+    --nameTextColor: #ffffff;
     --nameBackgroundColor: #8b5509;
-    --nameTextColorMod: #ffebe9;
+    --nameTextColorMod: #ffffff;
     --nameBackgroundColorMod: #1e90ff;
     --nameFontSize: 18px;
     --nameBoxPadding: 2px;
