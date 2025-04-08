@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
+    --nameTextColorOwner: #b42ac1;
+    --nameBackgroundColorOwner: #ffffff;
     --nameTextColorMember: #ffebe9;
     --nameBackgroundColorMember: #a32834;
     --nameTextColor: #ffebe9;
-    --nameBackgroundColor: #9b5f0a;
+    --nameBackgroundColor: #8b5509;
     --nameTextColorMod: #ffebe9;
     --nameBackgroundColorMod: #1e90ff;
     --nameFontSize: 18px;
@@ -143,4 +145,16 @@ yt-live-chat-text-message-renderer #author-name.member,
 yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="member"] {
     background-color: var(--nameBackgroundColorMember) !important;
     color: var(--nameTextColorMember) !important;
+}
+
+yt-live-chat-text-message-renderer #author-name[type="owner"],
+yt-live-chat-text-message-renderer #author-name.owner,
+yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="owner"] {
+    background-color: var(--nameTextColorOwner) !important;
+    color: var(--nameBackgroundColorOwner) !important;
+}
+
+yt-live-chat-text-message-renderer[author-type="owner"],
+yt-live-chat-text-message-renderer[author-type="owner"][is-highlighted] {
+  background-color: transparent !important;
 }
