@@ -172,7 +172,6 @@ yt-live-chat-text-message-renderer[author-type="owner"][is-highlighted] {
 }
 
 
-yt-live-chat-text-message-renderer[author-type="moderator"] #chat-badges.yt-live-chat-author-chip::after,
 yt-live-chat-text-message-renderer[author-type="member"] #chat-badges.yt-live-chat-author-chip::after,
 yt-live-chat-text-message-renderer[author-type="owner"] #chat-badges.yt-live-chat-author-chip::after {
     content: "";
