@@ -127,11 +127,11 @@ yt-live-chat-banner-manager {
     }
 }
 
-/* yt-live-chat-text-message-renderer {
+yt-live-chat-text-message-renderer {
     opacity: 1;
     animation: fadeOut 1s forwards;
-    animation-delay: 10s;
-} */
+    animation-delay: 30s;
+}
 
 yt-live-chat-text-message-renderer #author-name[type="moderator"],
 yt-live-chat-text-message-renderer #author-name.moderator,
